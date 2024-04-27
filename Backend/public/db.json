@@ -1,0 +1,85 @@
+{"flights": [
+  {
+    "flightNo":4542,
+    "airlineName":"American Airlines",
+    "aircraftType":"Boeing 747",
+    "source":"JFK,NY",
+    "destination":"Denver,CO",
+    "etd":"10:30",
+    "eta":"12:45",
+    "duration":"2hr 15mins",
+    "gateNo":4,
+    "status":"Onboarding",
+    "URL":"https://static.dezeen.com/uploads/2013/01/dezeen_American-Airlines-logo-and-livery_4a.jpg"  
+  },
+  {
+    "flightNo":1345,
+    "airlineName":"Delta Airlines",
+    "aircraftType":"Airbus A340",
+    "source":"Cleveland,OH",
+    "destination":"Dallas,TX",
+    "etd":"15:00",
+    "eta":"16:30",
+    "duration":"1hr 30mins",
+    "gateNo":6,
+    "status":"Departed",
+    "URL":"https://logos-world.net/wp-content/uploads/2021/08/Delta-Emblem.png"
+  
+  },
+  {
+    "flightNo":7654,
+    "airlineName":"Qatar Airlines",
+    "aircraftType":"Boeing 747",
+    "source":"JFK,NY",
+    "destination":"Doha,Qatar",
+    "etd":"17:00",
+    "eta":"07:00",
+    "duration":"14hr 0mins",
+    "gateNo":1,
+    "status":"Delayed",
+    "URL":"https://qph.cf2.quoracdn.net/main-qimg-04504ec65a762cf005745543244b65f7-lq"
+  
+  },
+  {
+    "flightNo":4150,
+    "airlineName":"United Airlines",
+    "aircraftType":"Airbus A370",
+    "source":"Boston,MA",
+    "destination":"LosAngeles,CA",
+    "etd":"18:00",
+    "eta":"00:30",
+    "duration":"6hr 30mins",
+    "gateNo":9,
+    "status":"Onboarding",
+    "URL":"https://thenoah.net/wp-content/uploads/2023/06/united-airlines-logo-emblem-png.png"
+  
+  },
+  {
+    "flightNo":5678,
+    "airlineName":"Southwest Airlines",
+    "aircraftType":"Boeing 777",
+    "source":"Illnois,CH",
+    "destination":"Charlotte,NC",
+    "etd":"09:30",
+    "eta":"11:30",
+    "duration":"3hr 0mins",
+    "gateNo":2,
+    "status":"On Time",
+    "URL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-eUt5tXs-K3ZJ1VTijcEBtqB6HBKJxvxNoR0c0G2yKg&s"
+  },
+  {
+    "flightNo":3791,
+    "airlineName":"Air India",
+    "aircraftType":"Boeing 747",
+    "source":"Irving,TX",
+    "destination":"Hyderabad,India",
+    "etd":"01:30",
+    "eta":"17:30",
+    "duration":"15hr 45mins",
+    "gateNo":9,
+    "status":"Delayed",
+    "URL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS55v2g9kCAg8aXI9UpmTRcnwmgTCBd-Zd7GWWztPUopQ&s"
+  }
+  ]}
+
+  

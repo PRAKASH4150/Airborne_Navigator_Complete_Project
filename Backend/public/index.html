@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alice&family=Prata&family=Trirong&family=Alegreya+Sans&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navigation" class="mainnav">
+            <a href="#" class="logo">My Portfolio</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills"> Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#education">Education</a>
+            <a href="#contactme">Contact Me</a>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+                <i class="fa fa-bars"></i></a>
+        </nav>
+
+        <section id="aboutme" href="aboutme">
+            <p class="sectionheading">About Me</p>
+            <div id="photocontainer">
+                <div class="imagebuttonholder">
+                    <img src="./assets/User_Image_Icon.png" id="userimage" alt="This is a User Image">
+                </div>
+                <div class="imagebuttonholder">
+                    <button id="downloadresume" onclick="downloadResume()"> Download Resume </button>
+                </div>
+            </div>
+
+            <div id="contentcontainer">
+                <div id="introbox">
+                    <p id="hello"> Hello!! I am &nbsp;&nbsp;<span id="name">Prakash Moka</span></p>
+                    <br>
+                    <p id="content">I am current Graduate student at the University of New Haven,
+                        majoring in Computer Science. I come from a Java Full Stack work background.
+                        Former Senior Software Engineer at HCLTech,India with arround 2+ years of
+                        work experience. I am a technophile and very passionate to learn about new tools
+                        and technologies.
+                    </p>
+                    <br>
+                    <p id="email">
+                        <b>Email:</b> smoka2@unh.newhaven.edu
+                    </p>
+                </div>
+            </div>
+            <br>
+        </section>
+
+        <section id="experience" href="experience">
+            <p class="sectionheading">Experience</p>
+            <div id="workinfo">
+                <p id="company">HCL Technologies Ltd</p>
+                <p class="subtags">
+                    <span>
+                        <b>Role:</b> Senior Software Engineer&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span>
+                        <b>Location:</b> Chennai,India.&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span>
+                        <b>Tenure:</b> Oct 2020 - Dec 2022
+                    </span>
+                </p>
+
+                <ul id="reponsibilites">
+                    <li>
+                        <p>
+                            <b>Modernized VS10 System to Web-based Application:</b> Contributed to the modernization
+                            effort of the VS10 system (platform managing variable life annuities)
+                            in migrating the legacy Accent-R language system to a robust Java-based web application,
+                            significantly enhancing its accessibility and performance.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>System Module Revamping and Enhancement:</b> Spearheaded the revamping and
+                            enhancement of multiple system sub-modules, executing seamless data migration
+                            from flat files to SQL tables (Migrated over 1200 datasets in to SQL tables),
+                            automating legacy code transformation into Java, subsequent code refactoring,
+                            integrating REST endpoints, and rigorous testing of these endpoints for optimal
+                            functionality.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Angular UI Development and Integration:</b>
+                            Took charge of Angular UI development, ensuring end-to-end integration of user
+                            interfaces with backend functionalities. Executed and validated predefined unit
+                            test cases, conducted comprehensive code coverage and quality checks leveraging
+                            tools like Jacoco and SonarQube. Automated deployment of the refined code in to
+                            Dev servers by building CI/CD pipelines using Jenkins. Transformed over 25 sub
+                            modules of the application from Legacy code to Java.
+                        </p>
+                    </li>
+                </ul>
+
+
+            </div>
+        </section>
+
+        <section id="skills" href="skills">
+            <p class="sectionheading">Skills</p>
+            <div class="skillcontainer">
+                <img src="./assets/Skills_Icons/C_Logo_img.png" alt="C Language" title="C Programming"
+                    class="skill-img">
+                <img src="./assets/Skills_Icons/Java_Logo.png" alt="Java" title="Java Programming" class="skill-img">
+                <img src="./assets/Skills_Icons/Spring_Logo.png" title="Spring Framework" alt="Spring Framework"
+                    class="skill-img">
+                <img src="./assets/Skills_Icons/Python_Logo.png" title="Python Programming" alt="Python"
+                    class="skill-img">
+                <img src="./assets/Skills_Icons/SQL_Logo.png" title="Structured Query Language (SQL)" alt="SQL"
+                    class="skill-img">
+                <img src="./assets/Skills_Icons/Jenkins_Logo.png" title="Jenkins" alt="Jenkins" class="skill-img">
+            </div>
+            <div class="skillcontainer">
+                <img src="./assets/Skills_Icons/HTML_5Logo.png" title="HTML5" alt="HTML5" class="skill-img">
+                <img src="./assets/Skills_Icons/CSS_Logo.png" title="CSS" alt="CSS" class="skill-img">
+                <img src="./assets/Skills_Icons/Javascript_Logo.png" title="Javascript" alt="JavaScript"
+                    class="skill-img">
+                <img src="./assets/Skills_Icons/Angular_Logo.png" title="Angular" alt="Angular" class="skill-img">
+                <img src="./assets/Skills_Icons/Git_Logo.png" title="Git" alt="Git" class="skill-img">
+                <img src="./assets/Skills_Icons/Amazon_Web_Services-Logo..png" title="Amazon Web Services (AWS)"
+                    alt="aws" class="skill-img">
+            </div>
+
+        </section>
+
+        <section id="projects" href="projects">
+            <p class="sectionheading">Projects</p>
+            <div id="prj1container">
+                <div class="imagebuttonholder">
+                    <img src="./assets/Time_Sheet_Management_System.png" id="projectimage1"
+                        alt="This is a Project Image">
+                </div>
+                <div class="projectcontent">
+                    <p class="projectname">TimeSheet Management System</p>
+                    <ul class="projectdescription">
+                        <li>
+                            <p>
+                                An online web based application used to track the
+                                man hours spent on a particular task for a particular
+                                day and this applications is used to generate the
+                                hourly wage reports.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>Functionalities: </b>Signup, Login,
+                                Add Time Entry, View Entries, Update/Delete Entry,
+                                Calculate Wage, Wage Report generation.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>Tech Stack: </b>
+                                Developed using JDK11, Angular, Spring Boot,
+                                MSSQL (Hosted in AWS RDBMS), Spring Data JPA, HTML5,
+                                CSS and AWS Elastic Bean Stack.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>Live Hosted URL: </b>
+                                <a
+                                    href="http://timeclcokingapplicationftnd-env.eba-wd3dqwjn.us-east-1.elasticbeanstalk.com/timeclocking/signup">Time
+                                    Sheet Management System</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>Source Code:</b>
+                                <a
+                                    href="https://github.com/PRAKASH4150/TimeClockingProjectSpringBootRepo.git">GitHub</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="prj2container">
+                <div class="imagebuttonholder">
+                    <img src="./assets/Airport_Management_System.jpg" id="projectimage2" alt="This is a Project Image">
+                </div>
+                <div class="projectcontent">
+                    <p class="projectname">Airport Management System</p>
+                    <ul class="projectdescription">
+                        <li>
+                            <p>
+                                A Java Web-based application to manage the allocation
+                                of planes, pilots, runways, hangars etc.,
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>Functionalities: </b>Plane management,
+                                Pilot Management, Hangar Allocation, Admin Services
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>Tech Stack: </b>
+                                Developed using JDK8, Angular, Spring Boot, MySQL,
+                                Spring Data JPA, HTML5 and CSS.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>Architecture: </b>
+                                Microservice based architecture for enhanced scalability and flexibility.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>Source Code</b>
+                                <a href="https://github.com/PRAKASH4150/AirportManagementSystem">GitHub</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" href="achievements">
+            <p class="sectionheading">Achievements</p>
+            <ul id="acievementdesc">
+                <li>
+                    <p>
+                        <b>
+                            29th Convocation University Gold Medalist:
+                        </b>
+                        Gold Medal recipient at the 29th Convocation
+                        for outstanding academic achievement in Electrical
+                        and Electronics Engineering throughout the Bachelor's program.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>
+                            Promotion to Senior Software Engineer:
+                        </b>
+                        Received promotion to Senior Software Engineer within a year due
+                        to consistently delivering high-quality code to the client and for
+                        developing various automation scripts, applications which
+                        significantly added value to the client and got recognized as
+                        Rookie Rock Star while working under HCL Technologies Ltd.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>
+                            Real Time Density Based Traffic Surveillance System Integrated
+                            with Acoustic Based Emergency Vehicle Detection:
+                        </b>
+                        Presented at 4th IEEE Sponsored International Conference on Computer, Communication and Signal
+                        Processing (ICCCSP 2020)
+                    </p>
+                    <p>
+                        <b>
+                            Published Paper Link:
+                        </b>
+                        <a href="https://ieeexplore.ieee.org/document/9315209">
+                            IEEEXplore
+                        </a>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="education" href="education">
+            <p class="sectionheading">Education</p>
+            <div class="eduinfo">
+                <p class="school">University of New Haven</p>
+                <p class="subtags">
+                    <span>
+                        <b>Major:</b> M.S in Computer Science &nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span>
+                        <b>Location:</b> West Haven, CT, USA.
+                    </span>    
+                </p>
+                <p class="subtags">
+                    <span>
+                        <b>Duration:</b> Jan 2023 - Dec 2024&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span>
+                        <b>CGPA:</b>4.0/4.0
+                    </span>           
+                </p>
+                <p class="subtags">
+                    <b>Related Courses:</b>
+                    ntermediate Programming in C & C++, Computer Networks and Data Communication,
+                    Intro to Computer Security, Database Systems, Data Structures and algorithms,
+                    Operating systems, Java Programming.
+                </p>
+            </div>
+
+            <div class="eduinfo">
+                <p class="school">Sathyabama Institute of Science and Technology</p>
+                <p class="subtags">
+                    <span>
+                        <b>Major:</b> B.E in Electrical and Electronics Engineering &nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span>
+                        <b>Location:</b>Chennai India.
+                    </span>
+                </p>
+                <p class="subtags">
+                    <span>
+                        <b>Duration:</b> Jun 2016 - Jul 2020&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span>
+                        <b>CGPA:</b>9.08/10
+                    </span>
+                </p>
+                <p class="subtags">
+                    <b>Related Courses:</b>
+                    Fundamentals of Artificial Neural Networks, Programming in MATLAB,
+                    Python Programming.
+                </p>
+            </div>
+        </section>
+
+        <footer id="contactme" href="contactme">
+            <p class="sectionheading">Contact Me</p>
+            <div id="contactcenter">
+                <a href="https://www.linkedin.com/in/sai-surya-prakash-moka">
+                    <img src="./assets/Contact_Icons/Linkedin_Logo.png" alt="linkedin" class="contact-icon">
+                </a>
+                <a href="https://www.instagram.com/prakash_naidu07">
+                    <img src="./assets/Contact_Icons/Instagram_icon.png" alt="instagram" class="contact-icon">
+                </a>
+                <a href="https://github.com/PRAKASH4150">
+                    <img src="./assets/Contact_Icons/GitHub_Logo.png" alt="github" class="contact-icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

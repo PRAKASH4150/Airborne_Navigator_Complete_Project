@@ -1,0 +1,557 @@
+:root {
+    --black: black;
+    --white: white;
+    --blueish:#03045e;
+    --lightpink: #B3BFB8;
+    --logo_font_size: 25px;
+    --logo_font_size_mobileversion:40px;
+    --nav_font_size: 20px;
+    --nav_font_size_mobileversion:30px;
+    --section_heading_font_size: 35px;
+    --sections_padding: 5px;
+    --resume_button_bg_color: #D36135;
+    --font_family: "Alegreya Sans", serif;
+    --section_padding: 70px;
+    --section_padding_mobileversion: 25px;
+    --content_font_size_mobileversion: 30px;
+    --line-height_mobileversion: 50px;
+    --subtags_font_size:25px;
+    --section_main_content_size:28px;
+    --section_main_content_size_mobileversion:45px;
+    --content_font_size:20px;
+}
+
+body {
+    margin: 0%;
+    font-family: var(--font_family);
+    
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "navigation navigation"
+        "aboutme aboutme"
+        "experience experience"
+        "skills skills"
+        "projects projects"
+        "achievements education"
+        "contactme contactme";
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.mainnav {
+    grid-area: navigation;
+    background-color: var(--blueish);
+    margin: 0%;
+    text-align: right;
+
+}
+
+.mainnav a {
+    display:inline-block;
+    color: var(--white);
+    text-decoration: none;
+    padding: 15px;
+    padding-bottom: 5px;
+    font-size: var(--nav_font_size);
+
+}
+
+.mainnav .logo {
+    float: left;
+    font-weight: bolder;
+    font-size: var(--logo_font_size);
+}
+
+.mainnav a:hover {
+    background-color: var(--lightpink);
+    color: var(--black);
+    font-weight: bolder;
+}
+
+.mainnav .icon{
+    display: none;
+}
+.sectionheading {
+    text-align: center;
+    font-weight:lighter;
+    font-size: var(--section_heading_font_size);
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+#aboutme .sectionheading,
+#projects .sectionheading {
+    position: relative;
+    left: 50%;
+}
+
+#photocontainer .imagebuttonholder,
+#skills .skillcontainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#aboutme {
+    grid-area: aboutme;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: var(--sections_padding);
+    background-color: var(--white);
+
+}
+
+#photocontainer {
+    grid-column: 1;
+}
+
+#contentcontainer {
+    grid-column: 2;
+}
+
+
+#photocontainer .imagebuttonholder #userimage {
+    width: 50%;
+}
+
+#photocontainer .imagebuttonholder #downloadresume {
+    background-color: var(--resume_button_bg_color);
+    color: var(--white);
+    font-family: var(--font_family);
+    font-weight: bold;
+    font-size: var(--content_font_size);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+    width: 200px;
+    border-color: var(--resume_button_bg_color);
+
+}
+
+#photocontainer .imagebuttonholder #downloadresume:hover {
+    background-color: firebrick;
+}
+
+#contentcontainer #introbox {
+    padding-right: var(--section_padding);
+}
+
+#contentcontainer #introbox #hello {
+    font-size: var(--content_font_size);
+    font-weight: bold;
+    margin: 0%;
+}
+
+#contentcontainer #introbox #name {
+    font-size: var(--section_main_content_size);
+    font-weight: bolder;
+    margin: 0%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contentcontainer #introbox #content {
+    font-size: var(--content_font_size);
+    text-align: justify;
+    line-height: 27px;
+    margin: 0%;
+    margin-top: 10px;
+}
+
+#contentcontainer #introbox #email {
+    font-size: 18px;
+    margin: 0%;
+    margin-top: 10px;
+}
+
+#experience {
+    grid-area: experience;
+    padding: var(--sections_padding);
+    background-color: var(--lightpink);
+}
+
+#experience #workinfo {
+    padding-left: var(--section_padding);
+    padding-right: var(--section_padding);
+}
+
+#experience #workinfo #company {
+    font-size: var(--section_main_content_size);
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+#experience #workinfo .subtags {
+    font-size: 18px;
+    margin-top: 1%;
+}
+
+#experience #workinfo #reponsibilites {
+    font-size: var(--content_font_size);
+    text-align: justify;
+    line-height: 27px;
+}
+
+#skills {
+    grid-area: skills;
+    padding: var(--sections_padding);
+    background-color: var(--white);
+}
+
+#skills .skillcontainer .skill-img {
+    width: 100px;
+    height: 100px;
+    padding-left: 50px;
+    padding-right:50px;
+    padding-bottom: 30px;
+}
+
+#projects {
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: var(--sections_padding);
+    background-color: var(--lightpink);
+}
+
+#prj1container {
+    grid-column: 1;
+}
+
+#prj2container {
+    grid-column: 2;
+}
+
+#projectimage1 {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 10px;
+
+}
+
+#projectimage2 {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 238px;
+    border-radius: 10px;
+}
+
+.projectcontent {
+    padding-left: var(--section_padding);
+    padding-right: var(--section_padding);
+}
+
+.projectname {
+    font-size: var(--section_main_content_size);
+    font-weight: bold;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.projectdescription {
+    font-size: var(--content_font_size);
+    text-align: justify;
+    line-height: 22px;
+}
+
+#achievements {
+    padding: var(--sections_padding);
+    background-color: var(--white);
+    grid-area: achievements;
+}
+
+#acievementdesc {
+    font-size: var(--content_font_size);
+    text-align: justify;
+    line-height: 22px;
+}
+
+#education {
+    padding: var(--sections_padding);
+    background-color: var(--white);
+    grid-area: education;
+}
+
+#education .eduinfo {
+    padding-left: var(--section_padding);
+    padding-right: var(--section_padding);
+}
+
+#education .eduinfo .school {
+    font-size:var(--content_font_size);
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+#education .eduinfo .subtags {
+    font-size: 18px;
+    text-align: justify;
+}
+
+#contactme {
+    grid-area: contactme;
+    padding: var(--sections_padding);
+    background-color: var(--lightpink);
+}
+
+#contactcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactcenter .contact-icon {
+    width: 30px;
+    height: 30px;
+    padding-right:15px;
+    padding-left:15px;
+    padding-bottom: 5px;
+}
+
+@media only screen and (max-width:500px) {
+    .container {
+        grid-template-areas:
+            "navigation"
+            "aboutme"
+            "experience"
+            "skills"
+            "projects"
+            "achievements"
+            "education"
+            "contactme";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .mainnav a:not(.logo) {
+        display: none;
+    }
+
+    .mainnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .mainnav.responsive {
+        position: relative;
+    }
+
+    .mainnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .mainnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .mainnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .mainnav .logo {
+        font-size: var(--logo_font_size_mobileversion);
+    }
+    .mainnav a {
+        font-size: var(--nav_font_size_mobileversion);
+    
+    }
+
+    .sectionheading {
+        font-size:60px;
+        margin: 10px;
+    }
+    
+    #aboutme {
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr;
+        background-color: var(--white);
+        padding-bottom: var(--section_padding_mobileversion);
+
+    }
+    #aboutme .sectionheading, #projects .sectionheading
+    {
+      grid-row:1;
+      left:0%;
+
+    }    
+    #photocontainer {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #contentcontainer {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    #photocontainer .imagebuttonholder #userimage {
+        width: 80%;
+    }
+
+    #photocontainer .imagebuttonholder #downloadresume {
+        font-size: var(--content_font_size_mobileversion);
+        margin-top: 40px;
+        width: 350px;
+    }
+
+    #contentcontainer #introbox {
+        padding: var(--section_padding_mobileversion);
+        padding-top: 40px;
+    }
+
+    #contentcontainer #introbox #hello {
+        font-size: var(--content_font_size_mobileversion);
+    }
+
+    #contentcontainer #introbox #name {
+        font-size:var(--section_main_content_size_mobileversion);
+    }
+
+    #contentcontainer #introbox #content {
+        font-size: var(--content_font_size_mobileversion);
+        line-height: var(--line-height_mobileversion);
+    }
+
+    #contentcontainer #introbox #email {
+        font-size: 25px;
+    }
+
+    #experience {
+        padding: var(--section_padding_mobileversion);
+    }
+
+    #experience #workinfo {
+        padding-left: var(--section_padding_mobileversion);
+        padding-right: var(--section_padding_mobileversion);
+    }
+
+    #experience #workinfo #company {
+        font-size: var(--section_main_content_size_mobileversion);
+    }
+
+    #experience #workinfo .subtags {
+        font-size:var(--subtags_font_size);
+    }
+
+    #experience #workinfo .subtags span{
+        display: block;
+        line-height:30px;
+    }
+    #experience #workinfo #reponsibilites {
+        font-size: var(--content_font_size_mobileversion);
+        line-height: var(--line-height_mobileversion);
+    }
+
+    #skills {
+        padding: var(--section_padding_mobileversion);
+    }
+
+    #skills .skillcontainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #skills .skillcontainer .skill-img {
+        width: 100px;
+        height: 100px;
+        padding: 30px;
+        padding-top: 10px;
+    }
+
+    #projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        padding: var(--section_padding_mobileversion);
+    }
+
+    #prj1container {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #prj2container {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #projectimage1,
+    #projectimage2 {
+        width: 80%;
+    }
+
+    .projectcontent {
+        padding-left: var(--section_padding_mobileversion);
+        padding-right: var(--section_padding_mobileversion);
+    }
+
+    .projectname {
+        font-size: 45px;
+    }
+
+    .projectdescription {
+        font-size: var(--content_font_size_mobileversion);
+        line-height: var(--line-height_mobileversion);
+    }
+
+    #achievements {
+        padding: var(--section_padding_mobileversion);
+    }
+
+    #acievementdesc {
+        font-size: var(--content_font_size_mobileversion);
+        line-height: var(--line-height_mobileversion);
+    }
+
+    #education {
+        padding: var(--section_padding_mobileversion);
+        background-color: var(--lightpink);
+    }
+
+    #education .eduinfo {
+        padding-left: var(--section_padding_mobileversion);
+        padding-right: var(--section_padding_mobileversion);
+    }
+
+    #education .eduinfo .school {
+        font-size:var(--content_font_size_mobileversion);
+    }
+
+    #education .eduinfo .subtags {
+        font-size: var(--content_font_size_mobileversion);
+    }
+    #education .eduinfo .subtags span {
+        display: block;
+        line-height:55px;
+    }
+
+
+    #contactme {
+        padding: var(--section_padding_mobileversion);
+        background-color: var(--white);
+    }
+
+    #contactcenter .contact-icon {
+        width: 40px;
+        height: 40px;
+        padding-right: 40px;
+    }
+
+}
